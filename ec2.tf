@@ -14,19 +14,10 @@ provider "aws" {
 }
 
 resource "aws_instance" "my-first-ec2" {
-  ami           = "ami-02e136e904f3da870"
+  ami           = "ami-0b0af3577fe5e3532"
   instance_type = "t3.micro"
   tags = {
     Name  = "myec2-1"
-    Owner = "Vakhob"
-  }
-}
-
-resource "aws_instance" "my-second-ec2" {
-  ami           = "ami-02e136e904f3da870"
-  instance_type = "t3.micro"
-  tags = {
-    Name  = "myec2-2"
     Owner = "Vakhob"
   }
 }
