@@ -10,7 +10,7 @@ pipeline {
         stage ('CreateEnv') {
             steps {
                 script {
-                    sh "chmod +x -R ${env.WORKSPACE}/../${env.JOB_NAME}/myec2.sh"
+                    sh "chmod +x -R ${env.WORKSPACE}/../${env.JOB_NAME}/test.sh"
                 }
             }
         }
