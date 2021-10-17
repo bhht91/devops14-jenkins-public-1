@@ -4,6 +4,12 @@ pipeline{
 
 	stages {
 
+		stage('Init') {
+
+			steps {
+				sh 'terraform init'
+			}
+		}
 		stage('Build') {
 
 			steps {
